@@ -36,6 +36,22 @@ __Packages:__
 
 ### Script __preparation.py__
 
+In the first phase, data is being prepared and newspaper articles (1602 articles in total) are grouped into 4 groups, as follows:
+
+* 1. Group: all articles created in the period __1.1.2020.-24.2.2020. - 281 articles__
+* 2. Group: all articles created in the period __25.2.2020.-13.3.2020. - 118 articles__
+* 3. Group: all articles created in the period __14.3.2020.-11.5.2020. - 481 articles__
+* 4. Group: all articles created in the period __12.5.2020.-25.8.2020. - 722 articles__
+
+The script __preparation.py__ reads the data from the __podaci.csv__ file and stores the text data from the Title and Text columns in a new 'Text' column.
+
+The time period is then defined by setting the start and end dates. The values of the Text column for the defined period of time are extracted from the loaded data and stored in the file __prva.txt__ (for the __first__ data group).
+
+* 1. Group - __prva.txt__
+* 2. Group - __druga.txt__
+* 3. Group - __treca.txt__
+* 4. Group - __cetvrta.txt__
+
 ## Phase 2 - Construction of the linguistic network
 
 ## Phase 3 - Analysis of the linguistic network
