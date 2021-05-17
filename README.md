@@ -69,4 +69,14 @@ The created complex networks are stored in in .txt and .edges files.
 
 The script __preparation.py__ was again used, this time to extract the textual data for the entire time period. This data will be used to analyze the entire complex network. The data is stored in the file __cijeli_tekst.txt__ and the created complex network is stored in __cijela_mreza.txt__ and __cijela_mreza.edges__.
 
+### Global network level analysis
+
+The analysis at the global level was performed with the script __Global.py__.
+
+Firstly, the script loads the complex network from __cijela_mreza.edges__ as a directed weighted graph.  Separately, it also loads it as an undirected graph, for the purpose of calculating the diameter.  Diameter is a maximum distance between 2 nodes in the graph - for the purpose of calculation, it must not be directed.
+
+
+
+### Local network level analysis
+
 ## Phase 4 - Analysing results
