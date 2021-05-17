@@ -54,6 +54,19 @@ The time period is then defined by setting the start and end dates. The values o
 
 ## Phase 2 - Construction of the linguistic network
 
+In the second phase, the script __preparation.py__ was used again.
+
+A __directed weighted complex network__ is created for each of the periods by observing all the adjacent pairs of words in the text read from left to right. The number of occurrences of one such pair in the text represents the weight of the connection between the two words (nodes).
+
+The created complex networks are stored in in .txt and .edges files.
+
+* 1. Group - __prva_mreza.txt__, __prva_mreza.edges__
+* 2. Group - __druga_mreza.txt__, __druga_mreza.edges__
+* 3. Group - __treca_mreza.txt__, __treca_mreza.edges__
+* 4. Group - __cetvrta_mreza.txt__, __cetvrta_mreza.edges__
+
 ## Phase 3 - Analysis of the linguistic network
+
+The script __preparation.py__ was again used, this time to extract the textual data for the entire time period. This data will be used to analyze the entire complex network. The data is stored in the file __cijeli_tekst.txt__ and the created complex network is stored in __cijela_mreza.txt__ and __cijela_mreza.edges__.
 
 ## Phase 4 - Analysing results
