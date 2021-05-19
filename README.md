@@ -84,6 +84,16 @@ Furthermore, the graph was checked for its number of __strongly__ and __weakly c
 
 __The shortest path__ between 2 nodes represents the smallest number of connections that need to be passed to get from one node to another, and the average length of the shortest path indicates what is the average length of the shortest path between all nodes in the graph. __The diameter__ represents the greatest distance between the nodes of the graph, it is the largest value among the shortest paths in the network and equals 11. __The transitivity ratio__ represents the ratio of the number of closed triplets of nodes in the graph and the total number of connected triplets. __The assortativity coefficient__ shows how many network nodes connect to similar nodes, for example, hubs with hubs and the like.
 
+__The degree histogram__ has the expected shape for a __complex network with real entities__, meaning that most nodes have a small degree, while a very small number of nodes have a large degree, as seen in the following image. There are a total of 46,640 nodes, and high degree nodes (connected to many other nodes - words) refer mostly to stopwords, which occur frequently.
+
+<div style="text-align:center" >
+
+<img src="global.png" width="700" style="text-align:center" >
+
+</div>
+
+<br>
+
 ### Local network level analysis
 
 ## Phase 4 - Analysing results
