@@ -88,7 +88,7 @@ __The degree histogram__ has the expected shape for a __complex network with rea
 
 <div style="text-align:center" >
 
-<img src="global.png" width="700" style="text-align:center" >
+<img src="Figure_1.png" width="700" style="text-align:center" >
 
 </div>
 
