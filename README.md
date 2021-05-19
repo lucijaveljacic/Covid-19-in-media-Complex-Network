@@ -96,4 +96,8 @@ __The degree histogram__ has the expected shape for a __complex network with rea
 
 ### Local network level analysis
 
+#### __Script Bez_stopwords.py__
+
+#### __Script Zavrsni_Local.py__
+
 ## Phase 4 - Analysing results
