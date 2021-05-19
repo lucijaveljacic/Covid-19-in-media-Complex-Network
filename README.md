@@ -73,9 +73,16 @@ The script __preparation.py__ was again used, this time to extract the textual d
 
 The analysis at the global level was performed with the script __Global.py__.
 
-Firstly, the script loads the complex network from __cijela_mreza.edges__ as a directed weighted graph.  Separately, it also loads it as an undirected graph, for the purpose of calculating the diameter.  Diameter is a maximum distance between 2 nodes in the graph - for the purpose of calculation, it must not be directed.
+Firstly, the script loads the complex network from __cijela_mreza.edges__ as a directed weighted graph.  Separately, it also loads it as an undirected graph, for the purpose of calculating the diameter.  Diameter is a maximum distance between 2 nodes in the graph - for the purpose of calculation, the graph must not be directed.
 
+After reading the graph, the script calculates the __global measures__ of the network, such as the total number of nodes and edges, 
+the average degree of the network, the density of the network, the number of connected components, the average shortest path length, the diameter, the transitivity, and the assortativity coefficient. 
 
+The graph (network) has 46,640 __nodes__ or words, and 256,374 __edges__, which represent connections between words. In this case, the edge refers to every two words that follow one another in the text. The __degree of a node__ is the number of edges connected to the node, so the __average degree of the network__ represents the average number of connections for each node in the graph and is 5.49. __Network density__ is the ratio of the number of realized and possible connections in a graph. 
+
+Furthermore, the graph was checked for its number of __strongly__ and __weakly connected components__, as well as the number of __connected components__. The graph is not strongly connected, meaning it has several strongly connected components, which means that not all other nodes can be reached from each node in the graph. However, there is only one weakly connected component, which means that if we ignore the orientation of the connections it is possible to get from each node to every other node in the graph. 
+
+__The shortest path__ between 2 nodes represents the smallest number of connections that need to be passed to get from one node to another, and the average length of the shortest path indicates what is the average length of the shortest path between all nodes in the graph. __The diameter__ represents the greatest distance between the nodes of the graph, it is the largest value among the shortest paths in the network and equals 11. __The transitivity ratio__ represents the ratio of the number of closed triplets of nodes in the graph and the total number of connected triplets. __The assortativity coefficient__ shows how many network nodes connect to similar nodes, for example, hubs with hubs and the like.
 
 ### Local network level analysis
 
